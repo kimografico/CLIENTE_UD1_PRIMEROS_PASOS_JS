@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <script>
+        let color = window.prompt("Que color de fondo quieres? R V A");
+        color = color.toUpperCase();
+        switch (color){
+            case "R":
+                document.bgColor="#FF0000"
+                break;
+            case "V":
+            case "G":
+                document.bgColor="#00FF00"
+                break;
+            case "A":
+            case "B":
+                document.bgColor="#0000FF"
+                break;
+            default:
+                window.alert("Por favor, pulsa F5 y responde 'R', 'V' o 'A'")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <h1>Ejercicio 8 - Número mayor</h1>
+    <input id="num1" type="text" name="num1" placeholder="Introduce un número"><br/><br/>
+    <input id="num2" type="text" name="num2" placeholder="Introduce un número"><br/><br/>
+    <input id="num3" type="text" name="num3" placeholder="Introduce un número"><br/><br/>
+    <button id="boton" onclick="operacion()">Número mayor</button>
+
+    <script>
+        function operacion(){
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let num3 = document.getElementById("num3").value;
+            let numMax = Math.max(num1, num2, num3);
+            if (num1 != "" && num2 != "" && num3 != ""){
+                window.alert("El número mas alto es el " + numMax);
+            } else {
+                window.alert("Es necesario rellenar todos los campos");
+            }
+            
+        }
+        
+        
+    </script>
+</body>
+</html>

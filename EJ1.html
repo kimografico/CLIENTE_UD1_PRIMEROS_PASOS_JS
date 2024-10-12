@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script>
+        // Reconocemos el momento del dia, para el saludo
+        let hora = new Date().getHours();
+        if (hora < 12){
+            hora = "Buenos días, "
+        } else if (hora < 21){
+            hora = "Buenas tardes, "
+        } else {
+            hora = "Buenas noches, "
+        }
+        let username = window.prompt("¿Cómo te llamas?");
+        // Si el campo está en blanco, lo rellenamos con un texto default
+        if (username == "") {
+            username = "amable desconocido/a";
+        }
+        window.alert(hora + username + " 👋");
+    </script>
+</body>
+</html>

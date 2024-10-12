@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+<script>
+    let texto = window.prompt("Escribe una frase");
+    texto = texto.toUpperCase();
+    let aNumber = 0;
+    for (var i=0; i < texto.length; i++){
+        if (texto.charAt(i) == 'A') {
+            aNumber ++;
+        };
+    };
+    window.alert("La letra A, mayúscula o minúscula, sale " + aNumber + " veces.");
+
+</script>    
+</body>
+</html>
